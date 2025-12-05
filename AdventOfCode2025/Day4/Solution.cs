@@ -1,6 +1,6 @@
 using AdventOfCode2025.Core;
 
-namespace Day3;
+namespace Day4;
 
 public class Solution : ISolution<long>
 {

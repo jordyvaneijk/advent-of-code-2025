@@ -8,8 +8,9 @@ Console.WriteLine("Advent of Code 2025!\n");
 
 Console.WriteLine("============================================");
 Console.WriteLine("1) Day 1: Secret Entrance");
-Console.WriteLine("1) Day 2: Gift Shop");
-Console.WriteLine("1) Day 2: Lobby");
+Console.WriteLine("2) Day 2: Gift Shop");
+Console.WriteLine("3) Day 3: Lobby");
+Console.WriteLine("4) Day 4: Printing Department");
 Console.ResetColor();
 Console.WriteLine("Select day to run (1-12): ");
 var input = Console.ReadLine();
@@ -41,6 +42,15 @@ switch (dayToRun)
         break;
     }
     case 3:
+    {
+        var solution = new SolutionDay3();
+        var outcome = await solution.Solve();
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine($"Day 2 solution: {outcome}");
+        Console.ResetColor();
+        break;
+    }
+    case 4:
     {
         var solution = new SolutionDay3();
         var outcome = await solution.Solve();
