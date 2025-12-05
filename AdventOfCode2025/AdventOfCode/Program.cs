@@ -2,6 +2,7 @@
 using SolutionDay2 = Day2.Solution;
 using SolutionDay3 = Day3.Solution;
 using SolutionDay4 = Day4.Solution;
+using SolutionDay5 = Day5.Solution;
 
 
 Console.ForegroundColor = ConsoleColor.DarkCyan;
@@ -12,6 +13,7 @@ Console.WriteLine("1) Day 1: Secret Entrance");
 Console.WriteLine("2) Day 2: Gift Shop");
 Console.WriteLine("3) Day 3: Lobby");
 Console.WriteLine("4) Day 4: Printing Department");
+Console.WriteLine("5) Day 5: Cafeteria");
 Console.ResetColor();
 Console.WriteLine("Select day to run (1-12): ");
 var input = Console.ReadLine();
@@ -57,6 +59,15 @@ switch (dayToRun)
         var outcome = await solution.Solve();
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine($"Day 4 solution: {outcome}");
+        Console.ResetColor();
+        break;
+    }
+    case 5:
+    {
+        var solution = new SolutionDay5();
+        var outcome = await solution.Solve();
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine($"Day 5 solution: {outcome}");
         Console.ResetColor();
         break;
     }
