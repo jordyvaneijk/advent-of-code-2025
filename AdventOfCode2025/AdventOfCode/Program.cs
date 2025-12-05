@@ -1,6 +1,7 @@
 ﻿using SolutionDay1 = Day1.Solution;
 using SolutionDay2 = Day2.Solution;
 using SolutionDay3 = Day3.Solution;
+using SolutionDay4 = Day4.Solution;
 
 
 Console.ForegroundColor = ConsoleColor.DarkCyan;
@@ -46,16 +47,16 @@ switch (dayToRun)
         var solution = new SolutionDay3();
         var outcome = await solution.Solve();
         Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine($"Day 2 solution: {outcome}");
+        Console.WriteLine($"Day 3 solution: {outcome}");
         Console.ResetColor();
         break;
     }
     case 4:
     {
-        var solution = new SolutionDay3();
+        var solution = new SolutionDay4();
         var outcome = await solution.Solve();
         Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine($"Day 2 solution: {outcome}");
+        Console.WriteLine($"Day 4 solution: {outcome}");
         Console.ResetColor();
         break;
     }
